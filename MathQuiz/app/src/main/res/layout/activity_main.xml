@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.kirtanpatel.mathquiz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom = "8dp"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1 of 5"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:textSize="16sp"
+            android:id="@+id/textCounter"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="What is the Capital of"
+        android:id="@+id/question"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:layout_weight="2"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Answer one"
+        android:id="@+id/answerOne"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:onClick="one"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Answer two"
+        android:id="@+id/answerTwo"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:onClick="two"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Answer three"
+        android:id="@+id/answerThree"
+        android:textSize="24sp"
+        android:layout_weight="1"
+        android:onClick="three"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:onClick="reset"
+        />
+
+
+</LinearLayout>
